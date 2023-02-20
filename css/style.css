@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    text-align: center;
+    background: url(https://thumbs.gfycat.com/FilthyGrouchyKitten-size_restricted.gif);
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+main {
+    display: inline-block;
+    margin: 2%;
+    padding: 10px;
+    position: relative;
+}
+
+.pokedex {
+   width: 100%;
+   max-width: 425px;
+}
+
+.pokemon_gif {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 10%);
+    height: 15%;
+}
+
+.pokemon_datas {
+    position: absolute;
+    font-weight: 600;
+    color: black;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(10px,5vw,20px);
+}
+
+.pokemon_name {
+ color: black;
+ text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    background-color:red;
+    width: 65%; 
+    top: 63%;
+    left: 13.5%;
+}
+
+.input_search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border-radius: 15px;
+    font-weight: 600;
+    color: black;
+    font-size: clamp(7px,5vw,1rem);
+    box-shadow: -1px 2px 0 white;
+}
+
+.buttons {
+   position: absolute;
+   bottom: 10%;
+   left: 50%;
+   width: 65%;
+   transform: translate(-57%,0);
+   display: flex;
+   gap: 20px;
+   transition-duration: 0.4s;
+}
+
+.button_prev {
+    color: white;
+    background-color: #444; /* Green */
+    border:2px solid black;
+    padding: 4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 50%;  
+    box-shadow: 2px 3px 0 #222;
+}
+
+
+
+.button_prev:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button_next {
+    color: white;
+    background-color: #444; /* Green */
+    border:2px solid black;
+    padding: 4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 50%;  
+    box-shadow: -2px 3px 0 #222;
+}
+
+
+.button_next:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
